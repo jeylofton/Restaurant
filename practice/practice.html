@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .flex-container{
+                display: flex;
+                height: 400px;
+                flex-direction: row;
+                background-color: lightgrey;
+                justify-content:  space-between;
+                align-items: flex-end;
+            }
+            .flex-child{
+                padding: 30px;
+                margin: 10px;
+                text-align: center;
+                background-color: #444444;
+                color:white;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                background-color: aqua;
+                height: 400px;
+                gap: 30px;
+            }
+            .grid-child{
+                padding: 30px;
+                margin: 3px;
+                text-align: center;
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Layout Practice</h1>
+    <h2>Flex Box</h2>
+    <section class="flex-container">
+        <div class="flex-child">A</div>
+        <div class="flex-child">B</div>
+        <div class="flex-child">C</div>
+    </section>
+    <h2>Grid</h2>
+    <section class="grid-container">
+        <div class="grid-child">1</div>
+        <div class="grid-child">2</div>
+        <div class="grid-child">3</div>
+    </section>
+    </body>
+</html>

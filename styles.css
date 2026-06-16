@@ -123,3 +123,121 @@ h2{
     color: white;
     padding: 15px;
 }
+.payment-container {
+    width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+}
+.payment-container p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(70, 159, 231);
+    margin-bottom: 20px;
+}
+fieldset{
+    border: none;
+    margin-bottom: 20px;
+}
+legend {
+    color: rgb(70, 159, 231);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+.account-row {
+    display: flex;
+    gap: 20px;
+}
+.account-row div {
+    flex: 1;
+}
+fieldset div{
+    margin-bottom: 15px;
+}
+.payment-methods {
+    display: flex;
+    margin-bottom: 15px;
+}
+.payment-methods i{
+    margin-right: 8px;
+}
+.payment-methods label {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(70, 159, 231);
+    color: white ;
+}
+.payment-data {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+.payment-data div {
+    flex: 1;
+}
+.payment-data div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.payment-data div:first-child input {
+    width: 120px;
+}
+.payment-zip {
+    margin-top: 20px;
+}
+.payment-zip label {
+    display: block;
+    margin-bottom: 5px;
+}
+.card-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.card-row label {
+    display: flex;
+    align-items: center;
+}
+.card-row input,
+.card-row select {
+    flex: 1;
+}
+.btn-pay {
+    width: 100%;
+    background-color: rgb(70, 159, 231);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-pay:hover {
+    background-color: #69b81a;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-top: 5px;
+}

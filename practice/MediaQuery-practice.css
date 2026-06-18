@@ -1,0 +1,61 @@
+/*Desktop*/
+html{
+    font-size: 100%;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(161, 222, 250);
+    height: 30vh;
+}
+main{
+    background-color: antiquewhite;
+    height: 40vh;
+}
+footer{
+    background-color: beige;
+    width: 30vh;
+}
+p{
+    width: 70%;
+    margin: 10px auto;
+    background-color: azure;
+}
+.homelink{
+    display: inline-block;
+}
+/*Table view*/
+@media((min-width:601px) and (max-width:768px)){
+    html{
+        font-size: 87.5%;
+    }
+    header{
+        background-color: blanchedalmond;
+    }
+    p{
+        width: 85%;
+    }
+    .homelink{
+        display: none;
+    }
+}
+/*phone view*/
+@media((max-width:600px)){
+
+html{
+font-size: 62.5%;
+}
+header{
+background-color: aqua;
+}
+p{
+width: 100%;
+}
+.homelink{
+    display: none;
+}
+}

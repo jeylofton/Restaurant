@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body{
     font-family: Arial;
     background-color: rgb(225, 216, 205);
@@ -18,14 +21,7 @@ body{
 nav a{
     padding: 10px;
 }
-@media(max-width:768px){
-    .header-container nav{
-        display: none;
-
-    }
-}
-Table{
-    justify-content: center;
+table{
     margin: auto;
 }
 table, td{
@@ -64,19 +60,11 @@ h2{
     padding: 10px;
     gap: 5px;
 }
-@media (max-width:768px){
-    .monthdishcontainer{
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        padding-bottom: 50px;
-    }
-}
 .price-order {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 .price-order a {
     background-color: lightblue;
@@ -104,13 +92,7 @@ h2{
 .food-image{
     width: 100%;
     height: 300px;
-}
-@media(max-width:768px){
-    .menu-items{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+    object-fit: cover;
 }
 .form-flex{
     display: flex;
@@ -170,11 +152,11 @@ legend {
 }
 input[type="text"],
 input[type="date"],
+input[type="number"],
 select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
-    box-sizing: border-box;
     margin-top: 5px;
 }
 .account-row {
@@ -252,13 +234,70 @@ fieldset div{
 .btn-pay:hover {
     background-color: #69b81a;
 }
-input[type="text"],
-input[type="date"],
-input[type="number"],
-select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    margin-top: 5px;
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    .header-container nav {
+        flex-basis: 100%;
+        justify-content: center;
+        order: 3;
+        gap: 10px;
+    }
+    .monthdishcontainer {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .monthdishcontainer img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dishes-container {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+    .food-image {
+        height: auto;
+    }
+    .form-flex {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+    .form-flex img {
+        width: 100%;
+        height: auto;
+    }
+    .form-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px 0;
+    }
+    .input-container input,
+    .input-container select,
+    .input-container textarea {
+        width: 100%;
+    }
+    .payment-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    .account-row,
+    .payment-data,
+    .card-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .payment-data div:first-child input {
+        width: 100%;
+    }
 }

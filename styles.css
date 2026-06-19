@@ -306,10 +306,13 @@ fieldset div{
         margin: 20px auto;
     }
     .account-row,
-    .payment-data,
-    .card-row {
+    .payment-data {
         flex-direction: column;
+        align-items: stretch;
         gap: 10px;
+    }
+    .payment-data div:first-child {
+        display: block;
     }
     .payment-data div:first-child input {
         width: 100%;
